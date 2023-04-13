@@ -1,2 +1,2 @@
 # Java-Book-Exercises
-In this repository, all the activities of the Paraninfo Programming book by Alfonso Jiménez Martín and Francisco Manuel Pérez Montes (ed. Paraninfo) will be uploaded.
+In this repository I will upload all the activities carried out from the Programming manual by [Alfonso Jiménez Martín and Francisco Manuel Pérez Montes (ed. Paraninfo)](https://www.paraninfo.es/catalogo/9788428342865/programacion--edicion-2021-) .
