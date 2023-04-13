@@ -46,3 +46,6 @@ This topic introduces the basic concepts of Object Oriented Programming (OOP). W
 
 ### Unit 8: Inheritance
 The projects in this unit introduce the concept of inheritance, working with classes and superclasses. We will know the access limitations to the members of a superclass, we will override methods, use the main functionalities defined in the Object class, and use abstract classes.
+
+### Unit 10: Text Files
+In this project you will learn the concept of exception and its types, manipulate exceptions, create exceptions, create text input and output streams using 'Scanner','FileWriter','FileReader','BufferedWriter','BufferedReader' and 'PrintWriter' and read and write to XML files.
