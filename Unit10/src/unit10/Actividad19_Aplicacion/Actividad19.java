@@ -51,7 +51,7 @@ public class Actividad19 {
                     }
                     pw.flush();
                 } catch (IOException e) {
-                    throw new RuntimeException(e);
+                    System.out.println("El fichero no existe o la ruta es errónea.");
                 }
             } else {
                 System.out.println("El fichero no existe o la ruta es errónea.");
