@@ -5,6 +5,8 @@
 # Java Book Exercises (ed. Paraninfo)
 In this repository I will upload all the activities carried out from the Programming manual by [Alfonso Jiménez Martín and Francisco Manuel Pérez Montes (ed. Paraninfo)](https://www.paraninfo.es/catalogo/9788428342865/programacion--edicion-2021-) .
 
+All the **exercises** are solved with the knowledge that I have been learning, all of them have the **Title of the Exercise** above the `Main` so that you can solve them. And you can see how I have solved it.
+
 # File structure 📁
 The file structure is divided by **units** each unit is explained later.
 The **units** are a Netbeans Project in which each activity is a Package with its corresponding class and necessary elements.
