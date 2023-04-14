@@ -1,0 +1,15 @@
+Nombre                      Edad        Peso        Estatura
+Juan Pedro Pérez Gómez      25          70,5        1,80
+Ana Ruiz del Val            23          60          1,75
+María García González       28          58,3        1,67
+David Pérez Sánchez         20          72,1        1,83
+Sofía Rodríguez Martín      26          55,7        1,70
+Alberto Fernández Pérez     30          81,2        1,75
+Carmen Martínez Ruiz        24          62,8        1,72
+Manuel González López       33          78,5        1,81
+Lucía Sánchez Torres        29          64,9        1,69
+María Fernández             28          65,5       1,68
+Carlos García               34          78,2       1,80
+Marta Pérez                 21          55,9       1,62
+Javier Rodríguez            25          71,4       1,75
+Sofía Jiménez               31          62,1       1,69
