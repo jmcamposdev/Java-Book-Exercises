@@ -16,11 +16,13 @@ public class Actividad5 {
             while (lector.hasNextLine()) {
                 suma += lector.nextDouble();
             }
+            
+            System.out.println("La suma de los números es: " + suma);
         } catch (FileNotFoundException e) {
             System.out.println("No existe el fichero");
         } catch(ArithmeticException e) {
             System.out.println("Se esperava que todo el contendio fuesen números.");
         }
-        System.out.println("La suma de los números es: " + suma);
+        
     }
 }
