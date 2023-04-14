@@ -1,4 +1,4 @@
-package unit10.Actividad7;
+package unit10.Actividad07;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

@@ -1,4 +1,4 @@
-package unit10.Actividad2;
+package unit10.Actividad02;
 import java.io.FileReader;
 
 /*

@@ -1,4 +1,4 @@
-package unit10.Actividad6;
+package unit10.Actividad06;
 
 import java.io.File;
 import java.io.FileNotFoundException;
