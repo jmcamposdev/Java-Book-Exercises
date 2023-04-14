@@ -52,3 +52,6 @@ This topic introduces the basics of interfaces, defining abstract methods in an 
 
 ### Unit 10: Text Files
 In this project you will learn the concept of exception and its types, manipulate exceptions, create exceptions, create text input and output streams using 'Scanner','FileWriter','FileReader','BufferedWriter','BufferedReader' and 'PrintWriter' and read and write to XML files.
+
+> **Thank you for reading the project and I hope you find it useful 😉 <br>
+> If you liked it please give me ⭐️**
