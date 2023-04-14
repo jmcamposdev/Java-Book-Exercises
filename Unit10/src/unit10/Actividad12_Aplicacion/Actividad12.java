@@ -30,7 +30,7 @@ public class Actividad12 {
             escritor.write(nombre + " " + edad);
             escritor.newLine();
         } catch (IOException e) {
-            System.out.println("No se puede escribir en el fichero");;
+            System.out.println("No se puede escribir en el fichero");
         }
     }
 }
