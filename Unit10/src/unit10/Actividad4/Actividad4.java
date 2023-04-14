@@ -21,12 +21,13 @@ public class Actividad4 {
                 suma += Integer.parseInt(numero);
             }
             media = suma / numeros.length;
+            System.out.println("La suma de los números es: " + suma);
+            System.out.println("La media de los números es: " + media);
         } catch (Exception e) {
             System.out.println("No existe el fichero");
         }
 
-        System.out.println("La suma de los números es: " + suma);
-        System.out.println("La media de los números es: " + media);
+        
 
 
     }
