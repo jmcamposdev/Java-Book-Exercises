@@ -58,7 +58,7 @@ public class Actividad29 {
                 if (linea.contains("*/")) { // Si la linea contiene el final de un comentario de varias lineas
                     linea = linea.substring(linea.indexOf("*/") + 2);
                 }
-                if (multiLinea) { // Si estamos en un comentario de varias lineas
+                if (multiLinea) { // Si estamos en un comentario de varias líneas
                     if (linea.contains("*/")) {
                         multiLinea = false;
                         linea = linea.substring(linea.indexOf("*/") + 2);
@@ -66,7 +66,7 @@ public class Actividad29 {
                         linea = "";
                     }
                 }
-                pw.println(linea); // Escribimos la linea en el fichero sin comentarios
+                pw.println(linea); // Escribimos la línea en el fichero sin comentarios
             }
         } catch (IOException e) { // Si hay un error al leer el fichero
             System.out.println("Error al leer el archivo");
