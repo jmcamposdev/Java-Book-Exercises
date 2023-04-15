@@ -151,17 +151,21 @@ public class Operaciones {
     }
 
     // REALIZA LA VALIDACIÓN DE UNA FECHA
-    public static boolean fechaValida (int dia,int mes){
-        if (dia <= 0 || dia > 31 || mes <= 0 || mes > 12){
-            throw new IllegalArgumentException("El rando de los dias y meses es erróneo");
-        }
-
-        boolean valida;
-        valida = dia <= 28 && mes == 2 ||
-                ((dia <= 30) && (mes == 4 || mes == 6 || mes == 9 || mes == 11)) ||
-                ((dia <= 31) && (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12));
-        return valida;
+    public static boolean fechaValida(int dia, int mes) {
+    if (dia <= 0 || dia > 31 || mes <= 0 || mes > 12) {
+        throw new IllegalArgumentException("El rango de los dias y meses es erróneo");
     }
+
+    boolean valida;
+
+    switch (mes) {
+        case 2 -> valida = dia <= 28;            
+        case 4,6,9,11 -> valida = dia <= 30;
+        default -> valida = dia <= 31;
+    }
+
+    return valida;
+}
 
     // CALCULA LA CANTIDAD DE SEGUNDOS HASTA EL AMANECER
     public static int segundosHastaElAmanecer (int horas,int minutos){
