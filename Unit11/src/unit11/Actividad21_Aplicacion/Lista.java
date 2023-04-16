@@ -5,7 +5,7 @@ import java.util.Arrays;
 
 public class Lista implements Serializable {
     Object tabla[];
-    Lista() {
+    public Lista() {
         tabla = new Object[0];
     }
 
@@ -15,7 +15,7 @@ public class Lista implements Serializable {
         tabla[0] = nuevo;
     }
 
-    void insertarFinal(Object nuevo) {
+    public void insertarFinal(Object nuevo) {
         tabla = Arrays.copyOf(tabla, tabla.length + 1);
         tabla[tabla.length - 1] = nuevo;
     }
@@ -35,7 +35,7 @@ public class Lista implements Serializable {
         tabla[posicion] = nuevo;
     }
 
-    Object eliminar (int indice) {
+    public Object eliminar(int indice) {
         Object eliminado = null;
         if (indice >= 0 && indice < tabla.length) {
             eliminado = tabla[indice];
@@ -45,7 +45,7 @@ public class Lista implements Serializable {
         return eliminado;
     }
 
-    Object get(int indice) {
+    public Object get(int indice) {
         Object resultado = null;
         if (indice >= 0 && indice < tabla.length) {
             resultado = tabla[indice];
@@ -64,7 +64,7 @@ public class Lista implements Serializable {
         return indice;
     }
 
-    int size() {
+    public int size() {
         return tabla.length;
     }
 
