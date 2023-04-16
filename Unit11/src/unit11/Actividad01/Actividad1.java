@@ -14,6 +14,8 @@ public class Actividad1 {
         File fichero = new File("src/unit11/Actividad01/datos.dat");
 
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fichero))) {
+            // This can also be done with oos.writeObject(table); which saves the whole array and is a better option.
+            // For the activity that requires saving element by element later on, oos.writeObject() will be used;
             for (int i : tabla) {
                 oos.writeInt(i);
             }
