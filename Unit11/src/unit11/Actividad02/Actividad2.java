@@ -1,6 +1,7 @@
 package unit11.Actividad02;
 
 import java.io.File;
+import java.io.IOException;
 import java.io.ObjectOutputStream;
 
 /*
@@ -22,7 +23,7 @@ public class Actividad2 {
         try (ObjectOutputStream oos = new ObjectOutputStream(new java.io.FileOutputStream(archivo))) {
             oos.writeObject(estrofa);
             System.out.println("Se ha escrito la estrofa en el fichero binario.");
-        } catch (Exception e) {
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
     }

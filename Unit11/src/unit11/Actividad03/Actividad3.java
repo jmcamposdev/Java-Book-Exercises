@@ -4,6 +4,7 @@ import Functions.GetData;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.ObjectOutputStream;
 
 /*
@@ -21,7 +22,7 @@ public class Actividad3 {
             }
             oos.writeObject(tabla);
             System.out.println("Se ha escrito la tabla en el fichero binario.");
-        } catch (Exception e) {
+        } catch (IOException e) {
             System.out.println(e.getMessage());
         }
     }
