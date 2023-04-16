@@ -29,19 +29,20 @@ public class Actividad25 {
         int numero = GetData.getInt("Introduce un número entero: ");
 
         // Buscar el número en los ficheros
-        for (String fichero : ficheros) {
-            try (ObjectInputStream dis = new ObjectInputStream(new FileInputStream(fichero))) {
+        boolean encontrado = false;
+        for (int i = 0; i < ficheros.length && !encontrado; i++) {
+            try (ObjectInputStream dis = new ObjectInputStream(new FileInputStream(ficheros[i]))) {
                 int tamano = dis.readInt();  // Leer el tamaño de la tabla
-                for (int j = 0; j < tamano; j++) {
+                for (int j = 0; j < tamano && !encontrado; j++) {
                     int elemento = dis.readInt();  // Leer un elemento de la tabla
                     if (elemento == numero) {
                         // El número se ha encontrado en este fichero y en este lugar de la tabla
-                        System.out.printf("El número %d se encuentra en el fichero %s, en la posición %d de la tabla.%n", numero, fichero, j);
-                        return;
+                        System.out.printf("El número %d se encuentra en el fichero %s, en la posición %d de la tabla.%n", numero, ficheros[i], j);
+                        encontrado = true;
                     }
                 }
             } catch (IOException e) {
-                System.err.printf("Error al leer el fichero %s: %s%n", fichero, e.getMessage());
+                System.err.printf("Error al leer el fichero %s: %s%n", ficheros[i], e.getMessage());
             }
         }
 
