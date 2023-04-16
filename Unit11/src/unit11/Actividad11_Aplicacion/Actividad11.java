@@ -12,7 +12,7 @@ public class Actividad11 {
         File archivo = new File("src/unit11/Actividad11_Aplicacion/numeroDouble.dat");
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(archivo))) {
             double numero = GetData.getDouble("Introduce un número real: ",1);
-            oos.writeObject(numero);
+            oos.writeDouble(numero);
             System.out.println("Se ha escrito el número en el fichero binario.");
         } catch (IOException e) {
             System.out.println("Error al escribir el archivo.");
