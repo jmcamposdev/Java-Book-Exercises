@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /*
     Implementar un método genérico estático que realize la inserción de un objeto al final de una tabla,
-    ambos del mimso tipo genérico, que se pasan como parámetro. Devuelve una nueva tabla con el resultado de la inserción.
+    ambos del mismo tipo genérico, que se pasan como parámetro. Devuelve una nueva tabla con el resultado de la inserción.
  */
 public class Actividad1 {
     public static void main(String[] args) {
