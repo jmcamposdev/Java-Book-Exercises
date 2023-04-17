@@ -16,7 +16,7 @@ public class Actividad5 {
 
     }
 
-    private static ArrayList<Integer> crearArrayListAleatorio (int n, int min, int max) {
+    public static ArrayList<Integer> crearArrayListAleatorio (int n, int min, int max) {
         ArrayList<Integer> lista = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             lista.add((int) (Math.random() * (max - min + 1)) + min);
