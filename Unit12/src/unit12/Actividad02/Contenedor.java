@@ -2,7 +2,7 @@ package unit12.Actividad02;
 
 import java.util.Arrays;
 
-public class Contenedor <T> implements Comparable<T>{
+public class Contenedor <T> implements Comparable<T>, Cola<T> {
     private T[] objetos;
 
     public Contenedor (T[] objetos) {
@@ -54,5 +54,15 @@ public class Contenedor <T> implements Comparable<T>{
     @Override
     public int compareTo(T o) {
         return 0;
+    }
+
+    @Override
+    public void encolar(T elemento) {
+        this.insertarAlFinal(elemento);
+    }
+
+    @Override
+    public T desencolar() {
+        return this.extraerDelPrincipio();
     }
 }
