@@ -29,7 +29,7 @@ public class Actividad9 {
                 lista.set(i,lista.get(i)*100);
             }
         }
-        System.out.println("Lista moficicada: " + lista);
+        System.out.println("Lista modificada: " + lista);
 
     }
 }
