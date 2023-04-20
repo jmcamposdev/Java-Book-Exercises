@@ -8,8 +8,8 @@ import java.util.HashSet;
 import java.util.Set;
 
 /*
-    Insertar en una lista 20 enteros aletorios entre 1 y 10. A partir de ella crear un conjunto con los elementos
-    de la lista sin repetir, otro con los repetidos y otro con los elementos que aprecen una sola vez en la lista
+    Insertar en una lista 20 enteros aleatorios entre 1 y 10. A partir de ella crear un conjunto con los elementos
+    de la lista sin repetir, otro con los repetidos y otro con los elementos que aparecen una sola vez en la lista
     original.
  */
 public class Actividad10 {
