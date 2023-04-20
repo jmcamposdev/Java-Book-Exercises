@@ -19,15 +19,15 @@ public class Actividad10 {
         System.out.println("Lista Original: "+lista);
         Set<Integer> listaSinRepetidos = new HashSet<>(lista);
         System.out.println("Lista Sin Repetidos: "+ listaSinRepetidos);
-        Set<Integer> listaConRepedidos = new HashSet<>();
+        Set<Integer> listaConRepetidos = new HashSet<>();
         for (Integer n: listaSinRepetidos) {
             lista.remove(n);
         }
-        listaConRepedidos.addAll(lista);
-        System.out.println("Lista Repetidos: " + listaConRepedidos);
+        listaConRepetidos.addAll(lista);
+        System.out.println("Lista Repetidos: " + listaConRepetidos);
         Set<Integer> listaUnicos = new HashSet<>();
         listaUnicos.addAll(listaSinRepetidos);
-        listaUnicos.removeAll(listaConRepedidos);
+        listaUnicos.removeAll(listaConRepetidos);
         System.out.println("Lista No repetidos: "+ listaUnicos);
 
 
