@@ -8,7 +8,7 @@ import java.util.List;
 
 /*
     Utilizando la interfaz Saludo de la Actividad 1, implementar un método estático que aplique
-    un saludo a un grupo de peorsonas que se le pasa como parámetro en una table. Devolverá
+    un saludo a un grupo de personas que se le pasa como parámetro en una table. Devolverá
     los saludos en una lista de cadenas
  */
 public class Actividad02 {
