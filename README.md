@@ -50,10 +50,19 @@ This topic introduces the basic concepts of Object Oriented Programming (OOP). W
 The projects in this unit introduce the concept of inheritance, working with classes and superclasses. We will know the access limitations to the members of a superclass, we will override methods, use the main functionalities defined in the Object class, and use abstract classes.
 
 ### Unit 9: Interfaces
-This topic introduces the basics of interfaces, defining abstract methods in an interface, implementing interfaces to a class, understanding interface inheritance, API interfaces such as 'Comparator' and 'Comparable', implementing anonymous classes and the use of class sorting in lists.: Interfaces
+This topic introduces the basics of interfaces, defining abstract methods in an interface, implementing interfaces to a class, understanding interface inheritance, API interfaces such as `Comparator` and `Comparable, implementing anonymous classes and the use of class sorting in lists.: Interfaces
 
 ### Unit 10: Text Files
-In this project you will learn the concept of exception and its types, manipulate exceptions, create exceptions, create text input and output streams using 'Scanner','FileWriter','FileReader','BufferedWriter','BufferedReader' and 'PrintWriter' and read and write to XML files.
+In this unit you will learn the concept of exception and its types, manipulate exceptions, create exceptions, create text input and output streams using `Scanner`,`FileWriter`,`FileReader`,`BufferedWriter`,`BufferedReader` and `PrintWriter` and read and write to XML files.
+
+### Unit 11: Binary Text
+In this unit we will learn how to open and close binary files with `ObjectOutputStream` and `ObjectInputStream`, to know the possible exceptions that can be thrown during file opening/closing and writing/reading, to manage systems for saving and loading data.
+
+### Unit12: Collections
+The aim of this unit is to learn about the `Collections` , `List`, `Set` interface. Use and know their differences from `ArrayList`, `LinkedList`, `HashSet`, `TreeSet`, `LinkedHashSet` and `HashMap`, `TreeMap`. Use conversions between different implementations of `List` and `Set`.
+
+### Unit 13: Stream
+In this unit we will learn how to implement in-line functional interfaces, lambda expressions. Know the interfaces `Predicate`, `Function`, `Consumer`. Know how to use the `Stream` interface, use pipes in chained operations, `Stream` terminals.
 
 > **Thank you for reading the project and I hope you find it useful 😉 <br>
 > If you liked it please give me ⭐️**
