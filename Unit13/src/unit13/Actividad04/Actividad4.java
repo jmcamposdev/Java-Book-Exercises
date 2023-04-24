@@ -1,12 +1,19 @@
 package unit13.Actividad04;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.function.Predicate;
 
 /*
     Implementar un método estático al que se pasa como parámetro una tabla de tipo genérico y un predicado.
     El método devuelve otra tabla con los elementos de la tabla original que verifique la condición
     del predicado. Aplicarlo a una tabla de 50 enteros entre 1 y 100, que devuelva los múltiplos de 3.
+
+    Actividad Propuesta 1
+    Implementa un método estático al que se pasa como parámetro una lista de tipo genérico y un predicado.
+    El método devuelve otra lista con los elementos de la lista original que ve verifique la condición del predicado.
+    Aplicarlo a una lista de 50 enteros entre 1 y 100, que devuelva los múltiplos de 3.
  */
 public class Actividad4 {
     public static void main(String[] args) {
@@ -28,6 +35,14 @@ public class Actividad4 {
                 filtrada[filtrada.length - 1] = e;
             }
         }
+        return filtrada;
+    }
+
+    static <T> List<T> filtrar (List<T> lista, Predicate<T> filtro) {
+        ArrayList<T> filtrada = new ArrayList<>();
+        lista.forEach(e -> {
+            if (filtro.test(e)) filtrada.add(e);
+        } );
         return filtrada;
     }
 }
