@@ -13,4 +13,8 @@ public class Calculos {
     public static Double raizN (Double base, Integer n) {
         return Math.pow(base, 1./n);
     }
+
+    public static Double producto (Double a, Double b) {
+        return a*b;
+    }
 }
