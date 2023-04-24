@@ -10,4 +10,7 @@ public class Calculos {
     public static Double raiz3 (Double x) {
         return Math.pow(x, 1./3);
     }
+    public static Double raizN (Double base, Integer n) {
+        return Math.pow(base, 1./n);
+    }
 }
