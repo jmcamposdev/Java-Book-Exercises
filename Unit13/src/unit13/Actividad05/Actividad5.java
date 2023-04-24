@@ -1,6 +1,8 @@
 package unit13.Actividad05;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 import java.util.function.Function;
 
 /*
@@ -25,6 +27,15 @@ public class Actividad5 {
         V[] transforma = Arrays.copyOf(transf, original.length);
         for (int i = 0; i < original.length; i++) {
             transforma[i] = f.apply(original[i]);
+        }
+        return transforma;
+    }
+
+    // Al utilizar Lista no es necesario pasarle el valor de la tabla transformada como parámetro.
+    public static <T, V> List<V> transformar (List<T> original, Function<T, V> f) {
+        List<V> transforma = new ArrayList<>();
+        for (T e : original) {
+            transforma.add(f.apply(e));
         }
         return transforma;
     }
