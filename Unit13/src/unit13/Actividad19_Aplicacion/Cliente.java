@@ -45,6 +45,13 @@ public class Cliente implements Comparable<Cliente> {
         return cuota;
     }
 
+    public int edad() {
+        return LocalDate.now().getYear() - this.fechaNacimiento.getYear();
+    }
+    public int antiguedad() {
+        return LocalDate.now().getMonthValue() - this.fechaAlta.getMonthValue();
+    }
+
 
     @Override
     public String toString() {
