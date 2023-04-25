@@ -44,6 +44,9 @@ public class Cliente implements Comparable<Cliente> {
     public double getCuota() {
         return cuota;
     }
+    public String getDni() {
+        return this.dni;
+    }
 
     public int edad() {
         return LocalDate.now().getYear() - this.fechaNacimiento.getYear();
