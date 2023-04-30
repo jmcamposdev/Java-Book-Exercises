@@ -15,6 +15,8 @@ public class Actividad9 {
         System.out.print("Introduce un número: ");
         num = sc.nextInt();
 
+        num = Math.abs(num); // Nos aseguramos de que el número sea positivo
+
         // Comprobamos cuántas cifras tiene
         if (num == 0) { // Si el número es 0, tiene 1 cifra
             cifras = 1;
