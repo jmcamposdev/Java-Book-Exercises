@@ -14,7 +14,7 @@ public class Actividad6 {
         }
     }
 
-    private static boolean esPrimo(int i) {
+    public static boolean esPrimo(int i) {
         boolean primo = true;
         for (int j = 2; j < i && primo; j++) {
             if (i % j == 0) {
