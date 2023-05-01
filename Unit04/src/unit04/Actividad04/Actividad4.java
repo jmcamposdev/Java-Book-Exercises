@@ -21,7 +21,7 @@ public class Actividad4 {
         System.out.printf("El mayor es: %d", mayor(n1, n2));
     }
 
-    private static int mayor(int n1, int n2) {
+    public static int mayor(int n1, int n2) {
         // Se podría hacer con un if, pero como ya hemos visto el operador ternario, lo usamos
         // O también con la función Math.max()
         return n1 > n2 ? n1 : n2;
