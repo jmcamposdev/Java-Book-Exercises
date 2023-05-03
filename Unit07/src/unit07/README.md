@@ -8,10 +8,10 @@ List of Classes created throughout the unit:
 
 <a name="cuentaCorriente"></a>
 ## Cuenta Corriente (Act 1 - 7)
-In this package the class `CuentaCorriente` is created which will contain attributes: 
+In this package the class `CuentaCorriente` is created with these attributes: 
 - DNI
 - Name of the Account Holder
--  Balance
+- Balance
 - Bank
 - Manager
 
