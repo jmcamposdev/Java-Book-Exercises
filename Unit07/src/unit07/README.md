@@ -5,7 +5,8 @@
 List of Classes created throughout the unit:
 1. [Cuenta Corriente](#cuentaCorriente)
 
-<a href="cuentaCorriente"></a>
+
+<a name="cuentaCorriente"></a>
 ## Cuenta Corriente (Act 1 - 7)
 In this package the class `CuentaCorriente` is created which will contain attributes: 
 - DNI
