@@ -1,4 +1,4 @@
-package unit07.Hora;
+package unit07.Actividad06;
 
 /*
     7.6
