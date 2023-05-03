@@ -1,6 +1,6 @@
 package unit07.Actividad10.Maquinaria;
 
-import tema7.Tren.Personal.Maquinista;
+import unit07.Actividad10.Personal.Maquinista;
 
 public class Tren {
     Locomotora locomotora;

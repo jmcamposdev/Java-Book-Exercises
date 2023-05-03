@@ -1,6 +1,6 @@
 package unit07.Actividad10.Maquinaria;
 
-import tema7.Tren.Personal.Menanico;
+import unit07.Actividad10.Personal.Menanico;
 
 public class Locomotora {
     String matricula;
