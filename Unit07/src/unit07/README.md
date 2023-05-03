@@ -34,7 +34,7 @@ To see the classes [click here](./CuentaCorriente)
 
 <a name="hora"></a>
 ## Hora (Act 6)
-In this package the class `Hora` is created with these attributes:
+In this package the `Hora` class will manage the hour, minutes and seconds, and you could increment a second if is necessary will increment or reset the minutes or hours.
 - Hour
 - Minutes
 - Seconds
