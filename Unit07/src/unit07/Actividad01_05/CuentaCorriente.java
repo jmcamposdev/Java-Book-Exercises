@@ -1,4 +1,4 @@
-package unit07.CuentaCorriente;
+package unit07.Actividad01_05;
 
 /*
     7.1
