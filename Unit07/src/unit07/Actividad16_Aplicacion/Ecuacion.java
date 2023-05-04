@@ -8,8 +8,8 @@ package unit07.Actividad16_Aplicacion;
 
  */
 public class Ecuacion {
-    double a, b, c;
-    boolean discriminantePositivo;
+    private double a, b, c;
+    private boolean discriminantePositivo;
 
     public Ecuacion(double a, double b, double c) {
         this.a = a;
