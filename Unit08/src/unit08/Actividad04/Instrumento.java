@@ -21,5 +21,5 @@ public abstract class Instrumento {
         this.melodia[melodia.length-1] = nota;
     }
 
-    abstract void interpretar();
+    protected abstract void interpretar();
 }
