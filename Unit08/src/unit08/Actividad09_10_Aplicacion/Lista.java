@@ -1,7 +1,12 @@
-package unit08.Actividad09_Aplicacion;
+package unit08.Actividad09_10_Aplicacion;
 /*
+    Actividad 9
     Reimplementa la clase lista de la Actividad 11 de la Unitdad 7 sustituyendo el método
     mostrar() por el método toString() y sobreescribiendo el método toString() de la clase Object.
+
+    Actividad 10
+    Sobreescribe el método equals() para compararlas. Dos listas se considerarán iguales si tienen
+    los mismos elementos (incluidas las repeticiones) en el mismo orden.
 
  */
 
@@ -82,6 +87,21 @@ public class Lista {
             resultado.addFinal(num);
         }
         return resultado;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Lista lista1 = (Lista) o;
+
+        return Arrays.equals(lista, lista1.lista);
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(lista);
     }
 
     @Override
