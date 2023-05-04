@@ -10,8 +10,8 @@ package unit07.Actividad17_Aplicacion;
     necesitamos elegidos al azar sin repeticiones
  */
 public class Colores {
-    String colores;
-    int nColores;
+    private String colores;
+    private int nColores;
 
     public Colores () {
         colores = "azul rojo verde amarillo naranja rosa morado";
