@@ -5,9 +5,9 @@ package unit07.Actividad18_Aplicacion;
     al realizar una compra, con el menor número de monedas y billetes posible.
  */
 public class Importe {
-    double importe;
-    double[] monedas = {2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01};
-    int[] billetes = {500, 200, 100, 50, 20, 10, 5};
+    private double importe;
+    private static final double[] monedas = {2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01};
+    private static final int[] billetes = {500, 200, 100, 50, 20, 10, 5};
 
     public Importe(double importe) {
         this.importe = importe;
