@@ -4,6 +4,7 @@ import unit9.Actividad17_Aplicacion.Cola;
 import unit9.Actividad17_Aplicacion.Pila;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 /*
     Implementar en la Clase Lista para elementos Object las funciones sobrecargadas:
@@ -105,7 +106,7 @@ public class Lista implements Pila, Cola {
         Arrays.sort(lista);
     }
 
-    public void ordenar(java.util.Comparator<Object> c) {
+    public void ordenar(Comparator c) {
         Arrays.sort(lista, c);
     }
 }
