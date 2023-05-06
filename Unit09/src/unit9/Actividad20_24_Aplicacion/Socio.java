@@ -28,7 +28,7 @@ public class Socio implements Comparable<Socio>{
         this.id = id;
         this.nombre = nombre;
         DateTimeFormatter f = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        this.fechaNacimiento = LocalDate.parse(f.format(fechaNacimiento));
+        this.fechaNacimiento = fechaNacimiento;
     }
 
     public int edad(){
@@ -66,4 +66,8 @@ public class Socio implements Comparable<Socio>{
         return resultado;
     }
 
+    @Override
+    public String toString() {
+        return id + " " + nombre + " " + fechaNacimiento;
+    }
 }
