@@ -46,12 +46,13 @@ public class Lista implements Cola, Pila {
     }
 
     public Integer removeInteger(int index){
-        if (index < 0 || index >= lista.length){
-            throw new IllegalArgumentException("Valor del indice fuera de rando");
+        Integer eliminado = null;
+        if (index >= 0 && index < lista.length){
+            eliminado = lista[index];
+            System.arraycopy(lista,index+1,lista,index,lista.length-index-1);
+            lista = Arrays.copyOf(lista,lista.length-1);
         }
-        Integer eliminado = lista[index];
-        System.arraycopy(lista,index+1,lista,index,lista.length-index-1);
-        lista = Arrays.copyOf(lista,lista.length-1);
+
         return eliminado;
     }
     public Integer get(int index){
