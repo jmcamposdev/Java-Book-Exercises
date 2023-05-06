@@ -1,4 +1,4 @@
-package unit9.Actividad_17_Aplicacion;
+package unit9.Actividad17_Aplicacion;
 
 import java.util.Arrays;
 
