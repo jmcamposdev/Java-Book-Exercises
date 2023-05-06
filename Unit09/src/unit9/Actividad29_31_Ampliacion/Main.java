@@ -1,4 +1,4 @@
-package unit9.Actividad29_31Ampliacion;
+package unit9.Actividad29_31_Ampliacion;
 
 import unit9.Actividad25_Aplicacion.Lista;
 
