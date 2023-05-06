@@ -67,6 +67,10 @@ public class Lista {
         return index;
     }
 
+    public boolean estaVacia() {
+        return lista.length == 0;
+    }
+
     @Override
     public String toString() {
         return Arrays.deepToString(lista);
