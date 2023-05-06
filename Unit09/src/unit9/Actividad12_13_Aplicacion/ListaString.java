@@ -1,13 +1,16 @@
-package unit9.Actividad12_Aplicacion;
-
-import unit9.Actividad11.Lista;
+package unit9.Actividad12_13_Aplicacion;
 
 import java.util.Arrays;
 
 /*
+    Actividad 12
     Implementar la clase Lista para almacenar elementos de tipo String
+
+    Actividad 13
+    Definir las interfaces Cola y Pila para objetos String e implementarlos en la Clase ListaString
+    definida en la Actividad 12
  */
-public class ListaString {
+public class ListaString implements Cola, Pila{
     String[] lista;
 
     public ListaString(){
@@ -72,5 +75,25 @@ public class ListaString {
     @Override
     public String toString() {
         return Arrays.deepToString(lista);
+    }
+
+    @Override
+    public void encolar(String cad) {
+        insertarFinal(cad);
+    }
+
+    @Override
+    public String desencolar() {
+        return eliminar(0);
+    }
+
+    @Override
+    public void apilar(String cad) {
+        insertarFinal(cad);
+    }
+
+    @Override
+    public String desapilar() {
+        return eliminar(lista.length-1);
     }
 }
