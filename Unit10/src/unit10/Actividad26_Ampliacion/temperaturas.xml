@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<registros>
+    <registro>
+        <fecha>2019-01-01</fecha>
+        <maxTemp>10</maxTemp>
+        <minTemp>5</minTemp>
+    </registro>
+    <registro>
+        <fecha>2022-10-10</fecha>
+        <maxTemp>36</maxTemp>
+        <minTemp>35</minTemp>
+    </registro>
+    <registro>
+        <fecha>2022-11-11</fecha>
+        <maxTemp>15</maxTemp>
+        <minTemp>13</minTemp>
+    </registro>
+</registros>
