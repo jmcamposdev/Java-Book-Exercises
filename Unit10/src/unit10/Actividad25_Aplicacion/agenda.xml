@@ -1,4 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <agenda>
+    <contacto>
+        <nombre>Alvaro</nombre>
+        <telefono>345252192</telefono>
+    </contacto>
     <contacto>
         <nombre>Paco</nombre>
         <telefono>654362910</telefono>
