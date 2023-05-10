@@ -21,7 +21,7 @@ public class Actividad8 {
         }
     }
 
-    private static void mostrarDatosAlumnos(ResultSet rs) {
+    public static void mostrarDatosAlumnos(ResultSet rs) {
         try { // Mostramos los datos de los alumnos
             if (!rs.next()) { // Si no hay alumnos
                 System.out.println("No se han encontrado alumnos");
