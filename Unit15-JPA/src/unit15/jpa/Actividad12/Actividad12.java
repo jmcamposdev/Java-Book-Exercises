@@ -32,7 +32,7 @@ public class Actividad12 {
         query = "SELECT e FROM Empleado e WHERE e.oficina = :oficina";
 
         q = em.createQuery(query);
-        q.setParameter("ficina", oficinas.get(oficinaElegida - 1));
+        q.setParameter("oficina", oficinas.get(oficinaElegida - 1));
         List<Empleado> empleados = q.getResultList();
 
         for (Empleado empleado : empleados) {
