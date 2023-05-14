@@ -32,4 +32,14 @@
       <property name="javax.persistence.jdbc.password" value=""/>
     </properties>
   </persistence-unit>
+  <persistence-unit name="empleadoPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>unit15.jpa.Actividad08.Empleado</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/unit15"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
+    </properties>
+  </persistence-unit>
 </persistence>
