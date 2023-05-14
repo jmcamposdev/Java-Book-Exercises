@@ -3,6 +3,7 @@ package unit15.jpa.Actividad08;
 import javax.persistence.*;
 
 @Entity
+@NamedQuery(name = "Empleado.NumeroEmpleadoXPuestos", query = "SELECT e.puesto, COUNT(e) FROM Empleado e GROUP BY e.puesto")
 @Table(name = "empleado")
 public class Empleado {
     @Id
