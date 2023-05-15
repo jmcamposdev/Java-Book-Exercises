@@ -1,4 +1,4 @@
-package unit15.jpa.Actividad1_2;
+package unit15.jpa.Actividad01_02;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
