@@ -58,11 +58,23 @@ In this unit you will learn the concept of exception and its types, manipulate e
 ### Unit 11: Binary Text
 In this unit we will learn how to open and close binary files with `ObjectOutputStream` and `ObjectInputStream`, to know the possible exceptions that can be thrown during file opening/closing and writing/reading, to manage systems for saving and loading data.
 
-### Unit12: Collections
+### Unit 12: Collections
 The aim of this unit is to learn about the `Collections` , `List`, `Set` interface. Use and know their differences from `ArrayList`, `LinkedList`, `HashSet`, `TreeSet`, `LinkedHashSet` and `HashMap`, `TreeMap`. Use conversions between different implementations of `List` and `Set`.
 
 ### Unit 13: Stream
 In this unit we will learn how to implement in-line functional interfaces, lambda expressions. Know the interfaces `Predicate`, `Function`, `Consumer`. Know how to use the `Stream` interface, use pipes in chained operations, `Stream` terminals.
+
+### Unit 14: Database Connectivity (JDBC)
+In this unit, you will learn about data persistence using database management systems (SGBD) and how to configure the JDBC driver to access databases from different manufacturers. You will explore topics such as configuring the JDBC driver, establishing a connection between a Java program and an SGBD, executing SQL statements, and performing object-relational mapping for simple classes. By mastering these concepts, you'll be able to effectively persist data, connect to databases, execute SQL statements, and leverage object-relational mapping techniques in your Java applications.
+
+## Unit 15: Java Persistence API (JPA)
+This unit focuses on the Java Persistence API (JPA) and the fundamental concepts of data persistence. You will learn how to safeguard and retrieve data in any application by understanding the conversion mechanisms between object data and relational databases. Additionally, you will classify class relationships based on navigability and cardinality.
+
+The concept of object persistence will be explored, including its applications in file-based storage and alternative approaches. You will also become familiar with different notations and classes provided by JPA, along with the Java Persistence Query Language (JPQL) for data querying.
+
+The unit will introduce the tools offered by NetBeans for JPA management. These tools include features such as automatic generation of entity controllers, graphical management of the persistence.xml file, and assistance for creating connections and entities from schema relationships.
+
+By mastering the Java Persistence API and its related concepts, you will gain the ability to effectively manage data persistence, utilize different notations and classes, and harness the querying capabilities of JPQL. The tools provided by NetBeans will enhance your productivity and efficiency in JPA development tasks.
 
 > **Thank you for reading the project and I hope you find it useful 😉 <br>
 > If you liked it please give me ⭐️**
