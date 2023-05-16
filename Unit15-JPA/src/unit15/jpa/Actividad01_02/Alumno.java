@@ -15,8 +15,8 @@ import javax.persistence.Id;
 
 @Entity
 public class Alumno implements java.io.Serializable {
-    @Id
-    @GeneratedValue
+    @Id // Indica que el atributo es la clave primaria
+    @GeneratedValue // Indica que el valor de la clave primaria se genera automáticamente
     private int numero;
     private String nombre;
     private String direccion;
@@ -32,10 +32,8 @@ public class Alumno implements java.io.Serializable {
         this.notaMedia = notaMedia;
     }
 
-    public void setNumero(int numero) {
-        this.numero = numero;
-    }
-
+    // Importante: los métodos get y set deben ser públicos para que JPA pueda acceder a ellos
+    // No es necesario el método setNumero, ya que JPA se encarga de asignarle un valor
     public int getNumero() {
         return numero;
     }
