@@ -13,11 +13,12 @@ import javax.persistence.Persistence;
  */
 public class Actividad02 {
     public static void main(String[] args) {
+        // Creamos el gestor de persistencia
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("cochePU");
-        EntityManager em = emf.createEntityManager();
-        EntityTransaction tx = em.getTransaction();
-        Coche coche;
-        String matricula, marca, modelo;
+        EntityManager em = emf.createEntityManager(); // Crea el EntityManager
+        EntityTransaction tx = em.getTransaction(); // Crea la transacción
+        Coche coche; // Creamos el objeto coche
+        String matricula, marca, modelo; // Creamos las variables para guardar los datos del coche
         int plazas;
 
 
@@ -31,9 +32,9 @@ public class Actividad02 {
         coche = new Coche(matricula, marca, modelo, plazas);
 
         // Guardamos el coche en la base de datos
-        tx.begin();
-        em.persist(coche);
-        tx.commit();
+        tx.begin(); // Abrimos la transacción
+        em.persist(coche); // Guardamos el coche en la base de datos
+        tx.commit(); // Cerramos la transacción
 
         // Cerramos las conexiones
         em.close();
