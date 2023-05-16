@@ -5,7 +5,7 @@ import javax.persistence.Id;
 
 @Entity
 public class Coche implements java.io.Serializable{
-    @Id
+    @Id // Indica que el atributo es la clave primaria no generada automáticamente ya que la introducimos nosotros
     private String matricula;
     private String marca;
     private String modelo;
@@ -21,6 +21,7 @@ public class Coche implements java.io.Serializable{
         this.plazas = plazas;
     }
 
+    // Importante: los métodos get y set deben ser públicos para que JPA pueda acceder a ellos
     public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
