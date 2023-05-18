@@ -12,23 +12,32 @@ import javax.persistence.*;
 @Entity
 @Table(name = "ESTRELLA")
 public class Estrella  implements Serializable{
-    @Id
-    @GeneratedValue
+    @Id // Indica que el atributo es la clave primaria
+    @GeneratedValue // Indica que el valor de la clave primaria se genera automáticamente
     @Column(name = "id")
     private Long id;
     
-    @Column(name = "duracion")
+    @Column(name = "duracion") // Indica que el atributo se corresponde con una columna de la tabla
     private double duracion;
     
-    @Column(name = "intensidad")
+    @Column(name = "intensidad") // Indica que el atributo se corresponde con una columna de la tabla
     private int intensidad;
     
-    @Column(name = "verdoso")
+    @Column(name = "verdoso") // Indica que el atributo se corresponde con una columna de la tabla
     private boolean verdoso;
 
+    // Importante: los métodos get y set deben ser públicos para que JPA pueda acceder a ellos
     public Estrella() {
     }
 
+    /**
+     * Constructor de la clase Estrella
+     * Devuelve una nueva instancia de la clase Estrella
+     * La duración y la intensidad deben ser valores positivos
+     * @param duracion Duración de la estrella fugaz en segundos
+     * @param intensidad Intensidad de la estrella fugaz (de 1 a 100)
+     * @param verdoso Indica si la luz que emitía la estrella fugaz era de color verdoso
+     */
     public Estrella(double duracion, int intensidad, boolean verdoso) {
         if (duracion < 0) throw new IllegalArgumentException("La duración no puede ser negativa");
         if (intensidad < 0 || intensidad > 100) throw new IllegalArgumentException("La intensidad debe estar entre 0 y 100");
