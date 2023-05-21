@@ -79,6 +79,23 @@ public class EmpleadoDAO implements DAO<Empleado>{
         return empleados;
     }
 
+    public List<Empleado> readAllByOficina(int oficina) {
+        List<Empleado> empleados = new ArrayList<>();
+        if (conexion != null) {
+            String query = "SELECT * FROM empleado WHERE oficina = ?";
+            try (PreparedStatement ps = conexion.prepareStatement(query)) {
+                ps.setInt(1, oficina);
+                ResultSet rs = ps.executeQuery();
+                while (rs.next()) {
+                    empleados.add(extractEmpleadoFromResultSet(rs));
+                }
+            } catch (SQLException e) {
+                System.out.println("Error al leer los empleados");
+            }
+        }
+        return empleados;
+    }
+
     @Override
     public void insert(Empleado empleado) {
         if (conexion != null) {
