@@ -41,7 +41,6 @@ public class Actividad19 {
 
     private static int pedirOficina(ArrayList<Oficina> oficinas) {
         mostrarOficinas(oficinas);
-        int oficinaID;
         return GetData.getInt("Introduce el ID de la oficina: ", 1, oficinas.size());
     }
 
