@@ -142,7 +142,18 @@ public class EmpleadoDAO implements DAO<Empleado>{
                 System.out.println("Error al eliminar el empleado");
             }
         }
+    }
 
+    public void delete(int id) {
+        if (conexion != null) {
+            String query = "DELETE FROM empleado WHERE numemp = ?";
+            try (PreparedStatement ps = conexion.prepareStatement(query)) {
+                ps.setInt(1, id);
+                ps.executeUpdate();
+            } catch (SQLException e) {
+                System.out.println("Error al eliminar el empleado");
+            }
+        }
     }
 
     private Empleado extractEmpleadoFromResultSet(ResultSet rs) throws SQLException {
