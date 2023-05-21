@@ -7,7 +7,7 @@ import unit14.Funciones.GetData;
 import java.util.ArrayList;
 
 /*
-    Mustra un listado con el nombre y la edad de todos los empleados cuya edad se encuentra
+    Muestra un listado con el nombre y la edad de todos los empleados cuya edad se encuentra
     comprendida entre unos valores máximos y mínimos que introducirá el usuario
  */
 public class Actividad17 {
