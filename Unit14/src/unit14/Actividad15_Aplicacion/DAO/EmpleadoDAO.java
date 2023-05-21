@@ -61,6 +61,24 @@ public class EmpleadoDAO implements DAO<Empleado>{
         return empleados;
     }
 
+    public List<Empleado> readAllRangeAge(int min, int max) {
+        List<Empleado> empleados = new ArrayList<>();
+        if (conexion != null) {
+            String query = "SELECT * FROM empleado WHERE edad BETWEEN ? AND ?";
+            try (PreparedStatement ps = conexion.prepareStatement(query)) {
+                ps.setInt(1, min);
+                ps.setInt(2, max);
+                ResultSet rs = ps.executeQuery();
+                while (rs.next()) {
+                    empleados.add(extractEmpleadoFromResultSet(rs));
+                }
+            } catch (SQLException e) {
+                System.out.println("Error al leer los empleados");
+            }
+        }
+        return empleados;
+    }
+
     @Override
     public void insert(Empleado empleado) {
         if (conexion != null) {
