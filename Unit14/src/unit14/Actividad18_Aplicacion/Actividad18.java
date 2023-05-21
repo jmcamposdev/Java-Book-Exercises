@@ -9,8 +9,14 @@ import unit14.Funciones.GetData;
 import java.time.LocalDate;
 
 /*
+    Actividad 18
     Crea un programa que lea todos los datos de un empleado, excepto la fecha de contratación
     que será la de hoy, y los inserte en la base de datos
+
+    Actividad 19
+    Modifica la actividad anterior para que el programa utilize mapeo objeto-relacional.
+    Es decir hemos de insertarlos datos de un empleado creando previamente un objeto de tipo Empleado.
+    Utiliza también un objeto DAO para la inserción. No será necesario implementar otros métodos del objeto DAO.
  */
 public class Actividad18 {
     public static void main(String[] args) {
