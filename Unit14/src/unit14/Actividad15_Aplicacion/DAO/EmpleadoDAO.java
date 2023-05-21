@@ -82,17 +82,16 @@ public class EmpleadoDAO implements DAO<Empleado>{
     @Override
     public void insert(Empleado empleado) {
         if (conexion != null) {
-            String query = "INSERT INTO empleado VALUES (?, ?, ?, ?, ?, ?)";
+            String query = "INSERT INTO empleado VALUES (DEFAULT, ?, ?, ?, ?, ?)";
             try (PreparedStatement ps = conexion.prepareStatement(query)) {
-                ps.setInt(1, empleado.getId());
-                ps.setString(2, empleado.getNombre());
-                ps.setInt(3, empleado.getEdad());
-                ps.setInt(4, empleado.getOficina().getOficina());
-                ps.setString(5, empleado.getPuesto());
-                ps.setDate(6, Date.valueOf(empleado.getContrato()));
+                ps.setString(1, empleado.getNombre());
+                ps.setInt(2, empleado.getEdad());
+                ps.setInt(3, empleado.getOficina().getOficina());
+                ps.setString(4, empleado.getPuesto());
+                ps.setDate(5, Date.valueOf(empleado.getContrato()));
                 ps.executeUpdate();
             } catch (SQLException e) {
-                System.out.println("Error al insertar el empleado");
+                System.out.println(e.getMessage());
             }
         }
     }
