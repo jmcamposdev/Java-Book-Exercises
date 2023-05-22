@@ -5,6 +5,12 @@ import javax.swing.JOptionPane;
 import unit14.Actividad15_Aplicacion.DAO.OficinaDAO;
 import unit14.Actividad15_Aplicacion.Oficina;
 
+/*
+    Swing es una biblioteca gráfica para Java que permite crear ventanas que contienen
+    distintos elementos gráficos como botones, cajas de texto, listas desplegables, etc. Se
+    pide investigar sobre Swing y añadir una interfaz gráfica sencilla que permita introducir los datos de una ofiicna mediante un 
+    formulario y guardar dichos datos en la base de datos
+*/
 
 public class Actividad24 extends javax.swing.JFrame {
 
@@ -102,36 +108,37 @@ public class Actividad24 extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbCrearOficinaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbCrearOficinaActionPerformed
-        String ciudad = jtfCiudad.getText();
-        String superficieString = jtfSuperficie.getText();
-        String ventasString = jtfVentas.getText();
-        boolean isValidOficina = true;
-        String errorMessage = "";
+        String ciudad = jtfCiudad.getText(); // Obtenemos los datos del input de Ciudad
+        String superficieString = jtfSuperficie.getText(); // Obtenemos los datos del input de Superficie
+        String ventasString = jtfVentas.getText(); // Obtenemos los datos del input de Ventas
+        boolean isValidOficina = true; // Variable para comprobar si los datos son válidos
+        String errorMessage = ""; // Variable para guardar el mensaje de error
         
-        if (ciudad.isBlank()) {
+        if (ciudad.isBlank()) { // Comprobamos si el campo de Ciudad está vacío
             isValidOficina = false;
             errorMessage = "La ciudad no puede estar vacía";
-        } else if (!superficieString.matches("\\d+")) {
+        } else if (!superficieString.matches("\\d+")) { // Comprobamos si el campo de Superficie es numérico
             isValidOficina = false;
             errorMessage = "La superficie debe de ser numérica";
-        } else if (Integer.parseInt(superficieString) <= 0) {
+        } else if (Integer.parseInt(superficieString) <= 0) { // Comprobamos si el campo de Superficie es negativo
             isValidOficina = false;
             errorMessage = "La superficie no puede ser negativa";
-        } else if (!ventasString.matches("\\d+")) {
+        } else if (!ventasString.matches("\\d+")) { // Comprobamos si el campo de Ventas es numérico
             isValidOficina = false;
             errorMessage = "Las ventas debe de ser numérica";
-        } else if (Integer.parseInt(ventasString) <= 0) {
+        } else if (Integer.parseInt(ventasString) <= 0) { // Comprobamos si el campo de Ventas es negativo
             isValidOficina = false;
             errorMessage = "Las ventas no puede ser negativa";
         }
         
-        if (!isValidOficina) {
+        if (!isValidOficina) { // Si los datos no son válidos, mostramos un mensaje de error
             JOptionPane.showMessageDialog(this, errorMessage,"Error", JOptionPane.ERROR_MESSAGE);
-        } else {
-            OficinaDAO oficinaDAO = new OficinaDAO();
-            Oficina nuevaOficina = new Oficina(0, ciudad, Integer.parseInt(superficieString), Integer.valueOf(ventasString));
+        } else { // Si los datos son válidos, creamos la oficina
+            OficinaDAO oficinaDAO = new OficinaDAO(); // Creamos una instancia de OficinaDAO
+            // Creamos una nueva instancia de Oficina con los datos introducidos
+            Oficina nuevaOficina = new Oficina(0, ciudad, Integer.parseInt(superficieString), Integer.parseInt(ventasString));
             
-            oficinaDAO.insert(nuevaOficina);
+            oficinaDAO.insert(nuevaOficina); // Insertamos la nueva oficina en la base de datos
         }
     }//GEN-LAST:event_jbCrearOficinaActionPerformed
 
