@@ -63,12 +63,11 @@ public class OficinaDAO implements DAO<Oficina> {
     @Override
     public void insert(Oficina oficina) {
         if (conexion != null) {
-            String query = "INSERT INTO oficina VALUES (?, ?, ?, ?)";
+            String query = "INSERT INTO oficina VALUES (DEFAULT, ?, ?, ?)";
             try (PreparedStatement ps = conexion.prepareStatement(query)) {
-                ps.setInt(1, oficina.getOficina());
-                ps.setString(2, oficina.getCiudad());
-                ps.setInt(3, oficina.getSuperficie());
-                ps.setInt(4, oficina.getVentas());
+                ps.setString(1, oficina.getCiudad());
+                ps.setInt(2, oficina.getSuperficie());
+                ps.setInt(3, oficina.getVentas());
                 ps.executeUpdate();
             } catch (SQLException e) {
                 System.out.println("Error al insertar la oficina");
