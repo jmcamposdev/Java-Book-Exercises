@@ -8,7 +8,7 @@ import unit14.Actividad15_Aplicacion.Oficina;
 /*
     Swing es una biblioteca gráfica para Java que permite crear ventanas que contienen
     distintos elementos gráficos como botones, cajas de texto, listas desplegables, etc. Se
-    pide investigar sobre Swing y añadir una interfaz gráfica sencilla que permita introducir los datos de una ofiicna mediante un 
+    pide investigar sobre Swing y añadir una interfaz gráfica sencilla que permita introducir los datos de una oficina mediante un 
     formulario y guardar dichos datos en la base de datos
 */
 
