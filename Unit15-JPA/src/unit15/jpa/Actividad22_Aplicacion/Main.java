@@ -1,6 +1,5 @@
-package codigo;
+package unit15.jpa.Actividad22_Aplicacion;
 
-import java.util.Collection;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -18,10 +17,10 @@ public class Main {
         EntityManager em = emf.createEntityManager();
         String jpql = "SELECT m FROM Marinero m WHERE m.barco IS null";
         Query query = em.createQuery(jpql);
-        List<Marinero> marineros = query.getResultList();
+        List<codigo.Marinero> marineros = query.getResultList();
         
         System.out.println("Marineros sin barco");
-        for(Marinero m: marineros) {
+        for(codigo.Marinero m: marineros) {
               System.out.println(m);
            }
         }

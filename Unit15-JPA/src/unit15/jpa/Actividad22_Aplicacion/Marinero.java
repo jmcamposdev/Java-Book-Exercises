@@ -1,4 +1,4 @@
-package codigo;
+package unit15.jpa.Actividad22_Aplicacion;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
@@ -36,7 +36,7 @@ public class Marinero implements Serializable {
    private BigDecimal sueldo;
    @JoinColumn(name = "barco", referencedColumnName = "matricula")
    @ManyToOne
-   private Barco barco;
+   private codigo.Barco barco;
 
    public Marinero() {
    }
@@ -77,11 +77,11 @@ public class Marinero implements Serializable {
       this.sueldo = sueldo;
    }
 
-   public Barco getBarco() {
+   public codigo.Barco getBarco() {
       return barco;
    }
 
-   public void setBarco(Barco barco) {
+   public void setBarco(codigo.Barco barco) {
       this.barco = barco;
    }
 

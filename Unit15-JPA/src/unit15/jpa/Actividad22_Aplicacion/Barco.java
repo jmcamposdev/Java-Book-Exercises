@@ -1,4 +1,4 @@
-package codigo;
+package unit15.jpa.Actividad22_Aplicacion;
 
 import java.io.Serializable;
 import java.util.Collection;
