@@ -10,7 +10,7 @@ import javax.persistence.Id;
     uno de los alumnos), nombre, dirección y nota media. Convertir dicha clase en una Entidad
 
     Actividad 2
-    Modificar la Clase Alumno para que JPA se encargue de asignar un número distinto a casa alumno.
+    Modificar la Clase Alumno para que JPA se encargue de asignar un número distinto a cada alumno.
  */
 
 @Entity
