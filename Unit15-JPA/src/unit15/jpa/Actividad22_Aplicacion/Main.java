@@ -17,10 +17,10 @@ public class Main {
         EntityManager em = emf.createEntityManager();
         String jpql = "SELECT m FROM Marinero m WHERE m.barco IS null";
         Query query = em.createQuery(jpql);
-        List<codigo.Marinero> marineros = query.getResultList();
+        List<Marinero> marineros = query.getResultList();
         
         System.out.println("Marineros sin barco");
-        for(codigo.Marinero m: marineros) {
+        for(Marinero m: marineros) {
               System.out.println(m);
            }
         }
