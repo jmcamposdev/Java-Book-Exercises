@@ -3,6 +3,8 @@ package Functions;
 import java.text.ParsePosition;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class GetData {
@@ -272,5 +274,30 @@ public class GetData {
         String[] splitFecha = date.split("/");
         // Devolvemos un LocalDate formada gracia al Array (año,mes,día)
         return LocalDate.of(Integer.parseInt(splitFecha[2]),Integer.parseInt(splitFecha[1]),Integer.parseInt(splitFecha[0]));
+    }
+
+    public static LocalDateTime getDateTime(String s) {
+        String date = GetData.getString(s); // Pedimos la Fecha
+        // Creamos el formato que deberá tener la fecha
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+        // Seleccionamos que el analizador sea estricto por lo cual debe de coincidir con el formato que le hemos puesto
+        sdf.setLenient(false);
+        // Indicamos que el análisis lo realize desde el index 0 en adelante
+        ParsePosition pp = new ParsePosition(0);
+        // Intentamos convertir el String de la Fecha en un Date si no puede devuelve null
+        java.util.Date d = sdf.parse(date, pp);
+        while (d == null) { // Si es null volvemos a pedir la fecha y a pasarla hasta que sea válida
+            System.out.println("Ingrese una fecha válida (dd/mm/yyyy HH:mm)");
+            date = GetData.getString(s);
+            d = sdf.parse(date, pp);
+        }
+        // Convertimos el String Fecha en un Array separándolo por "/"
+        String[] splitFecha = date.split("/");
+        splitFecha[2] = splitFecha[2].substring(0,4);
+        // Convertimos el String Hora en un Array separándolo por ":"
+        String[] splitHora = date.split(":");
+        splitHora[0] = splitHora[0].substring(11,13);
+        // Devolvemos un LocalDate formada gracia al Array (año,mes,día)
+        return LocalDateTime.of(Integer.parseInt(splitFecha[2]),Integer.parseInt(splitFecha[1]),Integer.parseInt(splitFecha[0]),Integer.parseInt(splitHora[0]),Integer.parseInt(splitHora[1]));
     }
 }
